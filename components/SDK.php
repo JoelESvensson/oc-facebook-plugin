@@ -179,7 +179,7 @@ class SDK extends ComponentBase
                     "ss" => "Swati",
                     "st" => "Southern Sotho",
                     "su" => "Sundanese",
-                    "sv" => "Swedish",
+                    "sv_SE" => "Swedish",
                     "sw" => "Swahili",
                     "ta" => "Tamil",
                     "te" => "Telugu",
@@ -215,7 +215,8 @@ class SDK extends ComponentBase
         ];
     }
 
-    public function onRun() {
+    public function onRun()
+    {
         $this->lang = $this->property('lang');
         $this->appId = Settings::get('app_id');
     }

@@ -290,7 +290,7 @@ class Like extends ComponentBase
                 case '0':
                     $value = 'false';
                     break;
-                
+
                 default:
                     $value = $value;
                     break;
