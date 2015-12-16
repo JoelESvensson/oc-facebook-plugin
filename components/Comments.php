@@ -46,18 +46,7 @@ class Comments extends ComponentBase
                  'type'              => 'string',
                  'validationPattern' => '^(\d+)?$',
                  'validationMessage' => 'The width must be an integer.'
-            ],
-            'data-order-by' => [
-                 'title'             => 'Order by',
-                 'description'       => 'The order to use when displaying comments. ',
-                 'default'           => 'social',
-                 'type'              => 'dropdown',
-                 'options'           => [
-                    'social' => 'social',
-                    'reverse_time' => 'reverse_time',
-                    'time' => 'time'
-                 ]
-            ],
+            ], 
             'data-width' => [
                  'title'             => 'Width',
                  'description'       => 'The width of the plugin. Either a pixel'.
@@ -91,6 +80,5 @@ class Comments extends ComponentBase
             }
         });
         $this->attributes = HTML::attributes($attributes);
-        $this->appId = Settings::get('app_id');
     }
 }
