@@ -46,7 +46,7 @@ class Comments extends ComponentBase
                  'type'              => 'string',
                  'validationPattern' => '^(\d+)?$',
                  'validationMessage' => 'The width must be an integer.'
-            ], 
+            ],
             'data-width' => [
                  'title'             => 'Width',
                  'description'       => 'The width of the plugin. Either a pixel'.
