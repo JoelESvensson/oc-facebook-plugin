@@ -101,7 +101,7 @@ class Follow extends ComponentBase
                     "ch" => "Chamorro",
                     "co" => "Corsican",
                     "cr" => "Cree",
-                    "cs" => "Czech",
+                    "cs_CZ" => "Czech",
                     "cu" => "Church Slavic",
                     "cv" => "Chuvash",
                     "cy" => "Welsh",
