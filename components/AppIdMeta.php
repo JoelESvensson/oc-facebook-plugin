@@ -1,7 +1,6 @@
 <?php namespace Alxy\Facebook\Components;
 
 use Cms\Classes\ComponentBase;
-use HTML;
 use Alxy\Facebook\Models\Settings;
 
 class AppIdMeta extends ComponentBase
@@ -17,8 +16,8 @@ class AppIdMeta extends ComponentBase
         ];
     }
 
-    public function onRun() {
+    public function onRun()
+    {
         $this->appId = Settings::get('app_id');
     }
-
 }

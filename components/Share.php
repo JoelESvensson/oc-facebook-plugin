@@ -1,7 +1,7 @@
 <?php namespace Alxy\Facebook\Components;
 
 use Cms\Classes\ComponentBase;
-use HTML;
+use Html;
 use Alxy\Facebook\Models\Settings;
 
 class Share extends ComponentBase
@@ -242,9 +242,10 @@ class Share extends ComponentBase
         ];
     }
 
-    public function onRun() {
+    public function onRun()
+    {
         $attributes = array_except($this->getProperties(), ['lang']);
-        array_walk($attributes, function(&$value, $key) {
+        array_walk($attributes, function (&$value, $key) {
             switch ($value) {
                 case '1':
                     $value = 'true';
@@ -253,15 +254,14 @@ class Share extends ComponentBase
                 case '0':
                     $value = 'false';
                     break;
-                
+
                 default:
                     $value = $value;
                     break;
             }
         });
-        $this->attributes = HTML::attributes($attributes);
+        $this->attributes = Html::attributes($attributes);
         $this->lang = $this->property('lang');
         $this->appId = Settings::get('app_id');
     }
-
 }

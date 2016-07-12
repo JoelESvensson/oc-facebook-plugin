@@ -1,7 +1,7 @@
 <?php namespace Alxy\Facebook\Components;
 
 use Cms\Classes\ComponentBase;
-use HTML;
+use Html;
 use Alxy\Facebook\Models\Settings;
 
 class Follow extends ComponentBase
@@ -274,13 +274,13 @@ class Follow extends ComponentBase
                 case '0':
                     $value = 'false';
                     break;
-                
+
                 default:
                     $value = $value;
                     break;
             }
         });
-        $this->attributes = HTML::attributes($attributes);
+        $this->attributes = Html::attributes($attributes);
         $this->lang = $this->property('lang');
         $this->appId = Settings::get('app_id');
     }

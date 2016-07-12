@@ -1,7 +1,7 @@
 <?php namespace Alxy\Facebook\Components;
 
 use Cms\Classes\ComponentBase;
-use HTML;
+use Html;
 use Alxy\Facebook\Models\Settings;
 use Request;
 
@@ -79,6 +79,6 @@ class Comments extends ComponentBase
                     break;
             }
         });
-        $this->attributes = HTML::attributes($attributes);
+        $this->attributes = Html::attributes($attributes);
     }
 }
